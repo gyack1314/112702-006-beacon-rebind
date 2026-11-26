@@ -6,6 +6,8 @@
 {"at":3,"actor":"r1","kind":"calibration","body":{"revision":1,"position":"C","short":"33","stable_id":"c","observed":[3,3],"rssi":[-73,-66]}}
 {"at":3,"actor":"r2","kind":"calibration","body":{"revision":1,"position":"C","short":"33","observed":[3,3],"rssi":[-45,-38]}}
 {"at":3,"actor":"r3","kind":"calibration","body":{"revision":1,"position":"C","short":"33","stable_id":"c","observed":[3,3],"rssi":[-41,-34]}}
+{"at":4,"actor":"dock-a","kind":"occupancy","body":{"position":"A","observed":[4,4],"occupied":false,"valid_until":9}}
+{"at":4,"actor":"dock-c","kind":"occupancy","body":{"position":"C","observed":[4,4],"occupied":false,"valid_until":22}}
 {"at":5,"actor":"cart","kind":"scan","body":{"area":"east","observed":[5,5],"heard":{"r1:-42":"11","r2:-69":"11"}}}
 {"at":6,"actor":"cart","kind":"guide","body":{"area":"east","trip":"trip7","allowed":["A","C"]}}
 {"at":8,"actor":"r2","kind":"disconnect","body":{}}
@@ -16,4 +18,5 @@
 {"at":17,"actor":"cart","kind":"scan","body":{"area":"east","observed":[14,15],"heard":{"r1:-45":"11","r2:-60":"11"}}}
 {"at":18,"actor":"cart","kind":"inspect","body":{"trip":"trip7"}}
 {"at":19,"actor":"maint","kind":"proximity","body":{"position":"A","stable_id":"b","short":"11","observed":[12,16]}}
+{"at":20,"actor":"dock-a","kind":"occupancy","body":{"position":"A","observed":[20,20],"occupied":true,"valid_until":25}}
 {"at":21,"actor":"dispatch","kind":"inspect","body":{"area":"east","observed":[14,15]}}

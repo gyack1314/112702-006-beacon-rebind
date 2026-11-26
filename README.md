@@ -6,7 +6,7 @@
 
 连接保持期间使用 UTF-8 JSON Lines。一行请求对应一行 JSON 响应，换行符结束消息。`actor` 标识发送方，`kind` 标识消息类型，`body` 是负载。`at` 表示消息进入联调传输的时刻，和设备测量时刻分别记录。同一接收时刻按文件顺序读入。`disconnect` 由发送工具本地执行，关闭该发送方连接且没有响应。该方的下一条消息开启新连接。发送工具按会话顺序发送，不按 `at` 等待。
 
-RSSI 以 dBm 表示，区间由置位测量或移动探测所得。stable_id 是信标不可变编号，short 是广告短地址。拓扑 revision 的 effective 采用现场时刻。old 代读头只带 short，近场证明带站位和误差范围。引导和校准结果使用工位名标识。
+RSSI 以 dBm 表示，区间由置位测量或移动探测所得。stable_id 是信标不可变编号，short 是广告短地址。拓扑 revision 的 effective 采用现场时刻。旧读头只带 short，近场证明带站位和误差范围。引导和校准结果使用工位名标识。占位开关按物理工位上报，valid_until 是该次占位观测的时效。
 
 会话中出现的负载字段如下。字段组合和取值可直接查看原始记录。
 
@@ -14,6 +14,7 @@ RSSI 以 dBm 表示，区间由置位测量或移动探测所得。stable_id 是
 | --- | --- |
 | `topology` | `area`, `beacons`, `effective`, `needed_observers`, `positions`, `readers`, `revision` |
 | `calibration` | `observed`, `position`, `revision`, `rssi`, `short`, `stable_id` |
+| `occupancy` | `observed`, `occupied`, `position`, `valid_until` |
 | `scan` | `area`, `heard`, `observed` |
 | `guide` | `allowed`, `area`, `trip` |
 | `disconnect` |  |
