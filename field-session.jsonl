@@ -10,6 +10,8 @@
 {"at":4,"actor":"dock-c","kind":"occupancy","body":{"position":"C","observed":[4,4],"occupied":false,"valid_until":22}}
 {"at":5,"actor":"cart","kind":"scan","body":{"area":"east","observed":[5,5],"heard":{"r1:-42":"11","r2:-69":"11"}}}
 {"at":6,"actor":"cart","kind":"guide","body":{"area":"east","trip":"trip7","allowed":["A","C"]}}
+{"at":6,"actor":"cart2","kind":"scan","body":{"area":"east","observed":[6,6],"heard":{"r1:-69":"33","r3:-38":"33"}}}
+{"at":7,"actor":"cart2","kind":"guide","body":{"area":"east","trip":"trip8","allowed":["C"]}}
 {"at":8,"actor":"r2","kind":"disconnect","body":{}}
 {"at":12,"actor":"maint","kind":"move","body":{"area":"east","revision":2,"effective":[8,12],"readers":{"r2":{"xy":[5,0],"mode":"short"}},"beacons":{"a":{"short":"44","position":"B"},"b":{"short":"11","position":"A"}}}}
 {"at":14,"actor":"r2","kind":"calibration","body":{"revision":1,"position":"A","short":"11","observed":[7,9],"rssi":[-73,-66]}}
@@ -17,6 +19,7 @@
 {"at":16,"actor":"r2","kind":"calibration","body":{"revision":2,"position":"A","short":"11","observed":[13,14],"rssi":[-63,-57]}}
 {"at":17,"actor":"cart","kind":"scan","body":{"area":"east","observed":[14,15],"heard":{"r1:-45":"11","r2:-60":"11"}}}
 {"at":18,"actor":"cart","kind":"inspect","body":{"trip":"trip7"}}
+{"at":18,"actor":"cart2","kind":"inspect","body":{"trip":"trip8"}}
 {"at":19,"actor":"maint","kind":"proximity","body":{"position":"A","stable_id":"b","short":"11","observed":[12,16]}}
 {"at":20,"actor":"dock-a","kind":"occupancy","body":{"position":"A","observed":[20,20],"occupied":true,"valid_until":25}}
 {"at":21,"actor":"dispatch","kind":"inspect","body":{"area":"east","observed":[14,15]}}
